@@ -1,9 +1,9 @@
 import {View, Text} from "react-native";
 import { ComponentButtonInterface } from "../../components";
-import { styles } from "../Slider1/styles";
-import { TabTypes } from "../../navigations/tab.navigation";
+import { styles } from "./styles";
+import { DrawerTypes } from "../../navigations/drawer.navigation";
 
-export function Perfil({ navigation}: TabTypes) {
+export function Perfil({ navigation}: DrawerTypes) {
     function handleVoltar (){
         const tab = navigation.getParent()
         tab?.goBack()
